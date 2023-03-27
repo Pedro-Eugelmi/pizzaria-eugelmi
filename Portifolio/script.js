@@ -15,9 +15,9 @@ window.onscroll = () =>
                 })
         }
     })
-    let header = document.querySelector('header');
+    let header = document.querySelector('header') 
 
-    header.classList.toggle('sticky', window.scrollY > 100)
+    header.classList.toggle('sticky', window.scrollY > 100) 
     menuIcon.classList.remove('bx-x')
     navbar.classList.remove('active')
 }
@@ -39,7 +39,7 @@ duration:2000});
 
 ScrollReveal().reveal('.home-content', { origin:'top' });
 ScrollReveal().reveal('.abtm', { origin:'top' });
-ScrollReveal().reveal('.services', { origin:'top' });
+ScrollReveal().reveal('.skills', { origin:'top' });
 ScrollReveal().reveal('.portfolio', { origin:'top' });
 ScrollReveal().reveal('.contact', { origin:'top' });
 
@@ -51,3 +51,34 @@ const typed = new Typed('.multiple-text', {
     backDelay:1100,
     loop:true
 })
+
+/* Pop Up*/
+
+
+document.querySelectorAll('.portfolio-box').forEach( element => element.addEventListener('click', ()=>
+{ 
+  let modal = document.querySelector('.popUp');
+  let siteID = element.getAttribute('data-key');
+  let siteItem = sites[(siteID - 1)];
+  let title = document.querySelector('.popUpRight .content h2');
+  let desc = document.querySelector('.popUpRight .content p')
+  let img = document.querySelector('.popUpLeft .siteImg')
+  title.innerHTML = siteItem.name;
+  desc.innerHTML = siteItem.desc
+  img.style.backgroundImage = `url(${siteItem.img})`
+
+
+  modal.style.display ='flex'
+  setTimeout(()=> modal.style.opacity = '100', 100)
+  
+
+
+  
+  modal.querySelector('.buttons a').addEventListener('click', ()=>
+   { modal.style.opacity ='0'
+    setTimeout(()=> 
+    {modal.style.display = 'none'}, 200)
+    
+   })
+  
+}))

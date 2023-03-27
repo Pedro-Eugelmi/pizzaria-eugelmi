@@ -184,48 +184,90 @@ margin-bottom: 2rem;}
     font-size: 1.5rem;
     margin-bottom: 2rem;
 }
-.services{ 
+.skills{ 
     padding: 10rem;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-.services h2 
+.skills h2 
 { color: var(--text-color);
   font-size: 4rem;
   margin-bottom: 5rem;}
-.services-container h3 
-{ margin-bottom: 2rem;
-  }
-.services-container 
-{ display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 2rem;
+.skills-container h3 
+{ margin-bottom: 2rem; }
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 4rem;
   color: var(--text-color);
 
 }
-.services-container .service-box{
-    flex: 1 1 30rem;
-    background-color: var(--second-bg-color);
-    padding: 3rem 2rem 4rem;
-    border-radius: 2rem;
+
+.skills-container .skills-box {
+  position: relative;
+  border-radius: 2rem;
+  box-shadow: 0 0 1rem var(--main-color);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  flex: 1 1 25rem;
+  padding: 3rem;
+  background-color: var(--second-bg-color);
+  flex-direction: column;
+}
+
+
+.skills-box img{
+    width: 100%;
+    height: auto;
+    transition: .5s;}
+
+    .skills-box .skills-layer
+    {position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,.2), var(--main-color));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     text-align: center;
-    border: .2rem solid var(--bg-color);
-}
-.services-container .service-box:hover
-{   border: .2rem solid var(--main-color);}
-.service-box i 
-{ font-size: 7rem;
-color: var(--main-color);}
-.service-box h3
-{ font-size: 2.5rem;
-  line-height: 3rem;}
-.service-box p {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-}
+    transform: translateY(100%);
+    transition: 0.5s;}
+    .skills-box:hover .skills-layer
+    {transform: translateY(0);}
+    
+    .skills-box h2
+    { color: var(--text-color);
+    font-size: 3rem;}
+
+  .skills-layer h4 
+    { font-size: 3rem;
+      color: white;}
+      .skills-layer p
+      {color: var(--text-color);
+      font-size: 1.6rem;
+      margin: .3rem 0 1rem;}
+
+      .skills-layer a 
+      {display: inline-flex;
+       justify-content: center;
+        align-items: center;
+        width: 5rem;
+        height: 5rem;
+        background: var(--text-color);
+        border-radius: 50%;}
+        .skills-layer a i 
+        {font-size: 2rem;
+         color: var(--second-bg-color);}
+    .skills-box:hover img {
+      transform: scale(1.1);
+    }
+
+
 .portfolio h2 
 { font-size: 5rem;
 color: white;
@@ -243,7 +285,8 @@ margin-bottom: 2.5rem;}
     border-radius: 2rem;
     box-shadow: 0 0 1rem;
     overflow: hidden;
-    display: flex;}
+    display: flex;
+    cursor: pointer;}
 .portfolio-box img{
     width: 100%;
     height: auto;
@@ -282,12 +325,94 @@ margin-bottom: 2.5rem;}
         height: 5rem;
         background: var(--text-color);
         border-radius: 50%;}
-        .portfolio-layer a i 
-        {font-size: 2rem;
-         color: var(--second-bg-color);}
     .portfolio-box:hover img {
-      transform: scale(1.1);
+      transform: scale(1.1);}
+    .popUp
+    { position: fixed;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      height: 100%;
+      z-index: 9999;
+      transform: translate(-50%, -50%);
+      background-color: rgba(0, 0, 0, 0.253) ;
+      justify-content: center;
+      align-items: center;
+      display: none;
+      opacity: 0;
+      transition: 0.5s;
+
     }
+    .popUp-box
+    { width: 70%;
+      height: 75vh;
+      padding: 2rem;
+      background-color: var(--second-bg-color);
+      border-radius: 2rem;
+      box-shadow: 0 0 1rem var(--main-color); 
+      display: flex;}
+    .popUpLeft
+    { display: flex;
+      flex-direction: column;
+      flex: 1; 
+      padding: 2rem;}
+    .popUpLeft .siteImg
+    { width: 100%;
+      height: 100%;
+      min-width: 10vh;
+      border-radius: 2rem;
+      box-shadow: 0 0 1rem rgb(190, 189, 189); 
+      min-height: 20rem;
+      background-image: url('Assets/EM-BREVE....png');
+      background-size:cover;
+      background-position: center;}
+    .popUpLeft .buttons
+    { display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 1rem;
+      }
+    .popUpLeft .button 
+    { background-color: var(--main-color);
+      width: auto;
+      padding: 1rem;
+      border-radius: 1rem;
+      font-size: 1.5rem;}  
+      .popUpLeft a
+      {color: var(--text-color);
+      font-size: 1.5rem;
+      text-decoration: underline;
+      cursor: pointer;
+      margin-top: 1rem;} 
+
+    .popUpRight
+    { display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      text-align: center;
+      flex: 1;
+      width: 100%;
+      padding: 2rem;}
+
+      .popUpRight .content h2 
+      { font-size: 3rem;
+        color: var(--main-color);
+        line-height: 100%;
+        word-wrap: break-word;}
+    .popUpRight .content p
+    { color: var(--text-color);
+      font-size: 1.2rem;
+      margin-top: 2rem;
+      word-wrap: break-word;}
+    .popUpRight .gitHub a
+    { color: var(--main-color);
+      font-size: 2rem;}
+      .popUpRight .gitHub a:hover{
+       font-size: 2.2rem;
+       text-shadow: 0 0 1rem;}
+
     .button 
     { width: 100% ;
      display: flex;
@@ -353,6 +478,7 @@ section {
   padding: 10rem 4% 2rem;
   min-height: 100vh;
 }}
+
 @media(max-width: 750px )
 {
    #menu-item 
@@ -378,7 +504,25 @@ section {
 .portfolio-container 
 { display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 4rem;}}
+  gap: 4rem;}
+  .popUp-box
+  {flex-direction: column;}
+  .popUpLeft .siteImg 
+  { 
+    height: 1px;}
+    .skills-container {
+  grid-template-columns: repeat(2, auto);}
+  .skills-layer h4
+  { font-size: 2rem; }
+  .skills-layer p {
+    font-size: 1rem;
+  }
+  .skills-container{
+    gap: 2rem;
+  }
+}
+
+
 @media(max-width:550px)
 { .btn 
   { font-size: 2rem;} 
@@ -395,9 +539,10 @@ section {
     width: 6rem;
     height: 6rem;
     border: .3rem solid var(--main-color);
-    font-size: 3rem;
-
-  }}
+    font-size: 3rem;  }
+    .popUpRight .content p 
+    { font-size: 2rem;}
+}
 
 
 
@@ -423,4 +568,5 @@ section {
   { height: 75vh;} 
   .aboutme-inf h1{ 
     font-size: 4rem;
-  }}
+  }
+}
