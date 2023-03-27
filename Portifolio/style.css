@@ -345,7 +345,7 @@ margin-bottom: 2.5rem;}
     }
     .popUp-box
     { width: 70%;
-      height: 75vh;
+      height: auto;
       padding: 2rem;
       background-color: var(--second-bg-color);
       border-radius: 2rem;
@@ -406,9 +406,12 @@ margin-bottom: 2.5rem;}
       font-size: 1.2rem;
       margin-top: 2rem;
       word-wrap: break-word;}
+      .gitHub
+      {margin-top: 2rem;}
     .popUpRight .gitHub a
     { color: var(--main-color);
-      font-size: 2rem;}
+      font-size: 2rem;
+    margin-top: 2rem;}
       .popUpRight .gitHub a:hover{
        font-size: 2.2rem;
        text-shadow: 0 0 1rem;}
