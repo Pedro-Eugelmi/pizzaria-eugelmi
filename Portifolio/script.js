@@ -80,5 +80,12 @@ document.querySelectorAll('.portfolio-box').forEach( element => element.addEvent
     {modal.style.display = 'none'}, 200)
     
    })
+
+   modal.querySelector('.close').addEventListener('click', ()=>
+   { modal.style.opacity ='0'
+    setTimeout(()=> 
+    {modal.style.display = 'none'}, 200)
+    
+   })
   
 }))
