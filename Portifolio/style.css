@@ -69,7 +69,8 @@ body
     {font-size: 3.2rem;
     font-weight: 700;
     line-height: 1.1;
-    text-align: center;}
+    text-align: center;
+  margin-top: 2rem;}
     .home-content h1
     {   font-size: 5.6rem;
         font-weight: 700;
@@ -83,7 +84,7 @@ body
    text-shadow: 0 0 .25rem var(--main-color);}
   
  .social-media{
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     width: 4rem;
@@ -145,15 +146,12 @@ font-weight: 600;}
 { box-shadow: none;}
 .abtm{
     width: 100%; height: 66vh   ;
-    background-image: url("Assets/gif.gif");
-    background-size:cover ;
-    background-repeat:no-repeat;
-    background-position: left;
     display: flex;
     flex-direction: row;
     color: white;
     padding: 2rem;
     box-shadow: 0 0 1rem var(--main-color);
+    background-color: var(--second-bg-color);
 }
 .aboutme{ 
     display: flex;
@@ -165,17 +163,26 @@ font-weight: 600;}
     color: white;
     font-size: 4rem;
 }
-.empty-spot
-{   flex: 1;}
+.photo-spot
+{   flex: 1;
+  display: flex;
+  justify-content: flex-end;}
+.photo-spot img 
+{ width:fit-content;
+height:100%;
+  border-radius: 1rem;}
 .aboutme-inf {
     height: 66vh;
-    flex:1;
+    flex:2;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 4rem;
 }
+.heading 
+{ text-align: center;}
 .aboutme-inf h3
 {font-size: 2.5rem;
 margin-bottom: 2rem;}
@@ -193,7 +200,8 @@ margin-bottom: 2rem;}
 .skills h2 
 { color: var(--text-color);
   font-size: 4rem;
-  margin-bottom: 5rem;}
+  margin-bottom: 5rem;
+align-items: center;}
 .skills-container h3 
 { margin-bottom: 2rem; }
 .skills-container {
@@ -215,12 +223,15 @@ margin-bottom: 2rem;}
   padding: 3rem;
   background-color: var(--second-bg-color);
   flex-direction: column;
+  width: 20rem;
+  height: 20rem;
+  line-height: 20px;
 }
 
 
 .skills-box img{
-    width: 17rem;
-    height: 17rem;
+    width:100%;
+    height: 100%;
     transition: .5s;}
 
     .skills-box .skills-layer
@@ -245,7 +256,7 @@ margin-bottom: 2rem;}
     font-size: 3rem;}
 
   .skills-layer h4 
-    { font-size: 3rem;
+    { font-size: 2rem;
       color: white;}
       .skills-layer p
       {color: var(--text-color);
@@ -266,7 +277,29 @@ margin-bottom: 2rem;}
     .skills-box:hover img {
       transform: scale(1.1);
     }
-
+    .studying{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 1rem;
+    }
+.studying .bar{
+  width: 80%;
+  height: 12px;
+  background-color: #32394685;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;}
+.studying .line 
+{ background-color: green;
+  height: 8px;
+  margin-left: 5px;}
+.studying .percentage, .studying span 
+{ color: white;
+font-size: 2rem;
+margin-top: 1rem;}
 
 .portfolio h2 
 { font-size: 5rem;
@@ -523,6 +556,12 @@ section {
   margin: 3rem 0;
 
 }
+.abtm 
+{flex-direction: column;}
+.photo-spot 
+{ height: 10rem ;
+ display: none;
+justify-content: center;}
 .portfolio-container 
 { display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -557,8 +596,6 @@ section {
 @media(max-width:550px)
 { .btn 
   { font-size: 2rem;} 
-  .empty-spot
-  { display: none;}
   .aboutme-inf h1{ 
     font-size: 5rem;
   }

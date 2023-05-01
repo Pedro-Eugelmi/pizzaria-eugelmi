@@ -45,9 +45,9 @@ ScrollReveal().reveal('.contact', { origin:'top' });
 
 /* Multiple Text */
 const typed = new Typed('.multiple-text', {
-    strings:['Desenvolvedor FrontEnd' , 'Auxiliar de recebimento','Programador'],
-    typeSpeed: 50,
-    backSpeed:50,
+    strings:['Programador web' , 'Estudante de programação','Entusiasta da tecnologia'],
+    typeSpeed: 35,
+    backSpeed:35,
     backDelay:1100,
     loop:true
 })
