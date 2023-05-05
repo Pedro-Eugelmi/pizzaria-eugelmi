@@ -61,10 +61,12 @@ document.querySelectorAll('.portfolio-box').forEach( element => element.addEvent
   let siteID = element.getAttribute('data-key');
   let siteItem = sites[(siteID - 1)];
   let title = document.querySelector('.popUpRight .content h2');
-  let desc = document.querySelector('.popUpRight .content p')
-  let img = document.querySelector('.popUpLeft .siteImg')
+  let desc = document.querySelector('.popUpRight .content p');
+  let img = document.querySelector('.popUpLeft .siteImg');
+  let sitelink = document.querySelector('.buttons .site');
+  sitelink.href = siteItem.link
   title.innerHTML = siteItem.name;
-  desc.innerHTML = siteItem.desc
+  desc.innerHTML = siteItem.desc;
   img.style.backgroundImage = `url(${siteItem.img})`
 
 
@@ -74,7 +76,7 @@ document.querySelectorAll('.portfolio-box').forEach( element => element.addEvent
 
 
   
-  modal.querySelector('.buttons a').addEventListener('click', ()=>
+  modal.querySelector('.buttons .closePC    ').addEventListener('click', ()=>
    { modal.style.opacity ='0'
     setTimeout(()=> 
     {modal.style.display = 'none'}, 200)

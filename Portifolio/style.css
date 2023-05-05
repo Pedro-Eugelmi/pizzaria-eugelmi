@@ -148,10 +148,13 @@ font-weight: 600;}
     width: 100%; height: 66vh   ;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     color: white;
     padding: 2rem;
     box-shadow: 0 0 1rem var(--main-color);
-    background-color: var(--second-bg-color);
+    background-image: url("https://thumbs.gfycat.com/GiganticBowedCattle-max-1mb.gif");
+    background-size: cover;
 }
 .aboutme{ 
     display: flex;
@@ -166,11 +169,25 @@ font-weight: 600;}
 .photo-spot
 {   flex: 1;
   display: flex;
-  justify-content: flex-end;}
-.photo-spot img 
-{ width:fit-content;
-height:100%;
+  justify-content: flex-end;
+  background-image: url(assets/photo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  box-shadow: 0 0 1rem var(--main-color);
   border-radius: 1rem;}
+
+  .photo-spot-mobile
+  { display: none;
+    background-image: url(assets/photo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 1rem var(--main-color);
+    border-radius: 1rem;
+    height: 20rem;
+    width: 25%}
+
 .aboutme-inf {
     height: 66vh;
     flex:2;
@@ -220,11 +237,11 @@ align-items: center;}
   display: flex;
   align-items: center;
   flex: 1 1 25rem;
-  padding: 3rem;
+  padding: 4rem;
   background-color: var(--second-bg-color);
   flex-direction: column;
   width: 20rem;
-  height: 20rem;
+  height: auto;
   line-height: 20px;
 }
 
@@ -319,11 +336,18 @@ margin-bottom: 2.5rem;}
     box-shadow: 0 0 1rem;
     overflow: hidden;
     display: flex;
-    cursor: pointer;}
+    cursor: pointer;
+    width: 30rem;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(39, 39, 41);}
 .portfolio-box img{
     width: 100%;
-    height: auto;
-    transition: .5s;}
+    height:fit-content;
+    transition: .5s;
+    border-radius: 1rem;}
 
     .portfolio-box .portfolio-layer
     {position: absolute;
@@ -411,7 +435,13 @@ margin-bottom: 2.5rem;}
       width: auto;
       padding: 1rem;
       border-radius: 1rem;
-      font-size: 1.5rem;}  
+      font-size: 1.5rem;
+      cursor: pointer;
+      text-decoration: none;}
+      .popUpLeft .buttons a 
+      {text-decoration: none;}
+      .popUpLeft .button:hover
+      {box-shadow: 0 0 1rem var(--main-color);}  
       .popUpLeft a
       {color: var(--text-color);
       font-size: 1.5rem;
@@ -556,12 +586,7 @@ section {
   margin: 3rem 0;
 
 }
-.abtm 
-{flex-direction: column;}
-.photo-spot 
-{ height: 10rem ;
- display: none;
-justify-content: center;}
+
 .portfolio-container 
 { display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -575,9 +600,10 @@ justify-content: center;}
     .skills-container {
   grid-template-columns: repeat(2, auto);}
   .skills-layer h4
-  { font-size: 2rem; }
+  { font-size: 2.5rem; }
   .skills-layer p {
-    font-size: 1rem;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
   }
   .skills-container{
     gap: 4rem;
@@ -593,12 +619,20 @@ justify-content: center;}
 }
 
 
-@media(max-width:550px)
+@media(max-width:560px)
 { .btn 
   { font-size: 2rem;} 
   .aboutme-inf h1{ 
     font-size: 5rem;
   }
+  .photo-spot{
+    display: none;
+  }
+
+  .abtm {
+    flex-direction: column;
+  }
+
   .portfolio-layer h4
   { font-size: 2.5rem;}
   .social-media 
@@ -610,6 +644,7 @@ justify-content: center;}
     font-size: 3rem;  }
     .popUpRight .content p 
     { font-size: 2rem;}
+  
 }
 
 
