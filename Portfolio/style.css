@@ -327,7 +327,7 @@ margin-bottom: 2.5rem;}
 .portfolio-container 
 { display: grid;
   grid-template-columns: repeat(3, 1fr);
-  align-items: center;
+  place-items: center;
   gap: 2rem;}
 
   .portfolio-container .portfolio-box
@@ -534,7 +534,8 @@ margin-bottom: 2rem;}
 font-size: 5rem;}
 #contato h4 
 {color: white;
-font-size: 3rem;}
+font-size: 3rem;
+margin-bottom: 4rem;}
 #contato .social-media a,#contato .social-media i
 { font-size: 6rem;
   width: 8rem;
@@ -631,11 +632,9 @@ section {
   .photo-spot{
     display: none;
   }
-
   .abtm {
     flex-direction: column;
   }
-
   .portfolio-layer h4
   { font-size: 2.5rem;}
   .social-media 
@@ -647,10 +646,14 @@ section {
     font-size: 3rem;  }
     .popUpRight .content p 
     { font-size: 2rem;}
-  
+    .portfolio-container
+    { grid-template-columns: repeat(1, 1fr);
+    }
+    .portfolio-container .portfolio-box
+    { width: 40rem;
+      height: 40rem;
+    }
 }
-
-
 
   @media(max-width:450px)
   { html{ 
