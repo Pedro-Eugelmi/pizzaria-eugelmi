@@ -42,31 +42,31 @@ body
   z-index: 100;
   padding-top: 1rem;
 }
-  section {
+section {
     padding: 10rem 9% 2rem;
     min-height: 100vh;
   }
-  .home-content {
-    margin-top: 5rem;
-    background-image: url("https://github.com/Pedro-Eugelmi/Portfolio/blob/master/Portfolio/Assets/mainimageop3.jpg?raw=true");
-    box-shadow: 0 0 1rem var(--main-color);
-    height: 75vh;
-    width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    color: var(--text-color);
-    mask-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(88, 4, 4, 0.151));
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;}
-    .home-content h3:nth-of-type(2){
-        margin-bottom: 2rem;
+.home-content 
+{  margin-top: 5rem;
+  background-image: url("https://github.com/Pedro-Eugelmi/Portfolio/blob/master/Portfolio/Assets/mainimageop3.jpg?raw=true");
+  box-shadow: 0 0 1rem var(--main-color);
+  height: 75vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: var(--text-color);
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(88, 4, 4, 0.151));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;}
+.home-content h3:nth-of-type(2){
+    margin-bottom: 2rem;
     }
-    .home-content h3
-    {font-size: 3.2rem;
+  .home-content h3
+  { font-size: 3.2rem;
     font-weight: 700;
     line-height: 1.1;
     text-align: center;
@@ -281,26 +281,27 @@ align-items: center;}
       margin: .3rem 0 1rem;}
 
       .skills-layer a 
-      {display: inline-flex;
-       justify-content: center;
-        align-items: center;
-        width: 5rem;
-        height: 5rem;
-        background: var(--text-color);
-        border-radius: 50%;}
-        .skills-layer a i 
-        {font-size: 2rem;
-         color: var(--second-bg-color);}
-    .skills-box:hover img {
+ {display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 5rem;
+  background: var(--text-color);
+  border-radius: 50%;}
+  .skills-layer a i 
+{font-size: 2rem;
+ color: var(--second-bg-color);}
+  .skills-box:hover img {
       transform: scale(1.1);
     }
-    .studying{
+  .studying{
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
       margin-top: 1rem;
-    }
+      min-width: 20rem;
+  }
 .studying .bar{
   width: 80%;
   height: 12px;
@@ -402,7 +403,7 @@ margin-bottom: 2.5rem;}
     }
     .popUp-box
     { width: 70%;
-      height: auto;
+      min-height: 70vh;
       padding: 2rem;
       background-color: var(--second-bg-color);
       border-radius: 2rem;
@@ -468,7 +469,8 @@ margin-bottom: 2.5rem;}
     { color: var(--text-color);
       font-size: 1.2rem;
       margin-top: 2rem;
-      word-wrap: break-word;}
+      word-wrap: break-word;
+      text-align: left;}
       .gitHub
       {margin-top: 2rem;}
     .popUpRight .gitHub a
