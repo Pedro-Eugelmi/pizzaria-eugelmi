@@ -1,12 +1,18 @@
 let sites = [
-    {id:1, name:"Urna Eletrônica", desc:'Simulação de um urna eletrônica com personagens de desenho animado (Não completo)', img:"https://github.com/Pedro-Eugelmi/Portfolio/blob/master/Portfolio/Assets/siteimages/urna.png?raw=true", git:'https://github.com/Pedro-Eugelmi/Portfolio/tree/master/Urna%20eletronica', git:'https://github.com/Pedro-Eugelmi/Portfolio/tree/master/Urna%20eletronica', link:'../Urna eletronica/index.html', img:'https://github.com/Pedro-Eugelmi/Portfolio/blob/master/Portfolio/Assets/siteimages/urnaimages/urna.png?raw=true'},
-    {id:2, name:"ShareHope", 
+    {id:2, name:"Calculadora de Massa Corporal", desc:'Calculadora de Massa corporal feita com ReactJS e Typescript', 
+    img:'Assets/siteimages/masscalculator/big.jpg', git:''},    
+
+    {id:2, name:"Urna Eletrônica", desc:'Simulação de um urna eletrônica com personagens de desenho animado (Não completo)', img:"https://github.com/Pedro-Eugelmi/Portfolio/blob/master/Portfolio/Assets/siteimages/urna.png?raw=true", git:'https://github.com/Pedro-Eugelmi/Portfolio/tree/master/Urna%20eletronica', git:'https://github.com/Pedro-Eugelmi/Portfolio/tree/master/Urna%20eletronica', link:'../Urna eletronica/index.html', img:'https://github.com/Pedro-Eugelmi/Portfolio/blob/master/Portfolio/Assets/siteimages/urnaimages/urna.png?raw=true'},
+    
+    {id:3, name:"Site de venda de Pizzas com Javascript", 
+    desc:'Bem-vindo ao site de pizza da Pizzaria Eugelmi! Aqui você pode escolher suas pizzas favoritas, adicionar ao carrinho, personalizar com coberturas e tamanhos, e finalmente fazer o pedido. Aproveite uma experiência saborosa e conveniente!<br> Feito durante ocurso de Javascript', img:'Assets/EM-BREVE....png', git:''},
+    
+    {id:4, name:"ShareHope", 
         desc:'Apresentamos um site inovador que facilita doações para causas sociais e comunidades carentes, promovendo comunicação eficiente entre os usuários. Instituições compartilham atividades, projetos e necessidades, enquanto os usuários conscientizam através de vídeos. Com interface amigável e acessível, simplificamos doações e incentivamos participação ativa em causas sociais. Junte-se a nós nessa jornada de solidariedade e transformação social.',
         img:'Assets/siteimages/sharehopeimages/modalimage.jpg', git:'https://github.com/Pedro-Eugelmi/Projetos-IF/tree/master/ShareHope', link:'https://pedro-eugelmi.github.io/Projetos-IF/presentationSH/index.html'},
-    {id:3, name:"Calculadora de Massa Corporal", desc:'Calculadora de Massa corporal feita com ReactJS e Typescript', 
-        img:'Assets/siteimages/masscalculator/big.jpg', git:''},
-    {id:4, name:"Em Breve", desc:'Aguarde que em breve terá atualizações e novos sites para acessar!', img:'Assets/EM-BREVE....png', git:''},
+
     {id:5, name:"Em Breve", desc:'Aguarde que em breve terá atualizações e novos sites para acessar!', img:'Assets/EM-BREVE....png', git:''},
+
     {id:6, name:"Em Breve", desc:'Aguarde que em breve terá atualizações e novos sites para acessar!', img:'Assets/EM-BREVE....png', git:''},
 ]
 
