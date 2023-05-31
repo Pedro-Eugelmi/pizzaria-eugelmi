@@ -75,7 +75,7 @@ let lista = [
 },
 { 
     titulo:'Presidente',
-    numeros: "2",
+    numeros: 2,
     candidatos:[
         {
             numero: "72",

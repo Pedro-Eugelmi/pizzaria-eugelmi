@@ -614,7 +614,7 @@ section {
   .skills-container{
     gap: 4rem;
   }
-  .buttons a 
+  .closePC
   { display: none;}
   .popUp-box .close{ 
     display: flex;
