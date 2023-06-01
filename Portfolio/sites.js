@@ -2,8 +2,8 @@ let sites = [
     {id:1, name:"Calculadora de Massa Corporal", 
     desc:'Calculadora de Massa corporal feita com ReactJS e Typescript', 
     img:'Assets/siteimages/masscalculator/big.jpg', 
-    git:'',
-    link:''},    
+    git:'https://github.com/Pedro-Eugelmi/React-JS/tree/main/MassCalculator',
+    link:'https://pedro-eugelmi.github.io/React-JS/MassCalculator'},    
 
     {id:2, name:"Urna Eletrônica",
      desc:'Simulação de um urna eletrônica com personagens de desenho animado (Não completo)', 
