@@ -415,15 +415,16 @@ margin-bottom: 2.5rem;}
       flex: 1; 
       padding: 2rem;}
     .popUpLeft .siteImg
-    { width: 100%;
-      height: 100%;
-      min-width: 10vh;
+    { width:100%;
+      height: 300px;
       border-radius: 2rem;
       box-shadow: 0 0 1rem rgb(190, 189, 189); 
       min-height: 20rem;
       background-image: url('Assets/EM-BREVE....png');
-      background-size:cover;
-      background-position: center;}
+      background-size:contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: black;}
     .popUpLeft .buttons
     { display: flex;
       flex-direction: column;
@@ -434,13 +435,14 @@ margin-bottom: 2.5rem;}
     .popUpLeft .button 
     { background-color: var(--main-color);
       width: auto;
-      padding: 1rem;
+      padding: 1.5rem;
       border-radius: 1rem;
-      font-size: 1.5rem;
+      font-size: 2rem;
       cursor: pointer;
       text-decoration: none;}
       .popUpLeft .buttons a 
-      {text-decoration: none;}
+      {text-decoration: none;
+      }
       .popUpLeft .button:hover
       {box-shadow: 0 0 1rem var(--main-color);}  
       .popUpLeft a
@@ -467,7 +469,7 @@ margin-bottom: 2.5rem;}
         word-wrap: break-word;}
     .popUpRight .content p
     { color: var(--text-color);
-      font-size: 1.2rem;
+      font-size: 2rem;
       margin-top: 2rem;
       word-wrap: break-word;
       text-align: left;}
@@ -475,17 +477,19 @@ margin-bottom: 2.5rem;}
       {margin-top: 2rem;}
     .popUpRight .gitHub a
     { color: var(--main-color);
-      font-size: 2rem;
+      font-size: 3rem;
     margin-top: 2rem;}
       .popUpRight .gitHub a:hover{
-       font-size: 2.2rem;
+       font-size: 3.2rem;
        text-shadow: 0 0 1rem;}
     .popUp-box .close 
     { width: 100%;
+      height: 20px;
     display: none;
-    justify-content: center;
-    color: var(--text-color);
-    font-size: 2rem;}
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 6rem;
+    color: red;}
 
     .button 
     { width: 100% ;
@@ -568,7 +572,10 @@ margin-top: 1rem;}
 section {
   padding: 10rem 4% 2rem;
   min-height: 100vh;
-}}
+}
+.popUp-box
+{flex-direction: column;}
+}
 
 @media(max-width: 750px )
 {
@@ -592,17 +599,13 @@ section {
   margin: 3rem 0;
 
 }
-
 .portfolio-container 
 { display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 4rem;}
-  .popUp-box
-  {flex-direction: column;}
 
   .popUpLeft .siteImg 
-  { 
-    height: 1px;}
+  { height: 1px;}
     .skills-container {
   grid-template-columns: repeat(2, auto);}
   .skills-layer h4

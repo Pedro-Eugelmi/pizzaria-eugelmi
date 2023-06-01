@@ -8,7 +8,7 @@ let lista = [
             nome:"Perna Longa",
             partido:'PLT',
             fotos:[
-                {url:"assets/pernalonga.png", legenda:'Senador'}
+                {url:"Assets/pernalonga.png", legenda:'Senador'}
             ]
             
         },
@@ -17,14 +17,14 @@ let lista = [
             nome:"Sirigueijo",
             partido:'PFB',
             fotos:[
-                {url:"assets/sirigueijo.png", legenda:'Senador'}
+                {url:"Assets/sirigueijo.png", legenda:'Senador'}
             ]
          },{
             numero: "810",
             nome:"Leôncio",
             partido:'PSD',
             fotos:[
-                {url:"assets/leoncio.png", legenda:'Senador'}
+                {url:"Assets/leoncio.png", legenda:'Senador'}
             ]
          }
 
@@ -43,8 +43,8 @@ let lista = [
             partido:'PLT',
             vice:"Gaguinho" ,
             fotos:[
-                {url:"assets/patolino.png", legenda:'Governador'},
-                {url:"assets/gaguinho.png", legenda: 'Vice Governador', small:true}
+                {url:"Assets/patolino.png", legenda:'Governador'},
+                {url:"Assets/gaguinho.png", legenda: 'Vice Governador', small:true}
             ]
             
         },
@@ -54,8 +54,8 @@ let lista = [
             partido:'PFB',
             vice:"Sandy Bochchas" ,
             fotos:[
-                {url:"assets/lula.png", legenda:'Governador'},
-                {url:"assets/sandy.png", legenda: 'Vice Governador', small:true}
+                {url:"Assets/lula.png", legenda:'Governador'},
+                {url:"Assets/sandy.png", legenda: 'Vice Governador', small:true}
             ]
          },
          {
@@ -64,8 +64,8 @@ let lista = [
             partido:'PSD',
             vice:"texugo" ,
             fotos:[
-                {url:"assets/zecaurubu.png", legenda:'Governador'},
-                {url:"assets/texugo.png", legenda: 'Vice Governador', small:true}
+                {url:"Assets/zecaurubu.png", legenda:'Governador'},
+                {url:"Assets/texugo.png", legenda: 'Vice Governador', small:true}
             ]
          }
 
@@ -83,24 +83,24 @@ let lista = [
             partido:'PLT',
             vice:"Piu Piu" ,
             fotos:[
-                {url:"assets/taz.png", legenda:'Presidente'},
-                {url:"assets/piupiu.png", legenda: 'Vice Presidente', small:true}] 
+                {url:"Assets/taz.png", legenda:'Presidente'},
+                {url:"Assets/piupiu.png", legenda: 'Vice Presidente', small:true}] 
         },{
             numero: "93",
             nome:"Bob Esponja",
             partido:'PFB',
             vice:"Patrick Estrela" ,
             fotos:[
-                {url:"assets/bobesponja.png", legenda:'Presidente'},
-                {url:"assets/patrick.png", legenda: 'Vice Presidente', small:true}] 
+                {url:"Assets/bobesponja.png", legenda:'Presidente'},
+                {url:"Assets/patrick.png", legenda: 'Vice Presidente', small:true}] 
         },{
             numero: "81",
             nome:"Pica Pau",
             partido:'PSD',
             vice:"Pé de pano" ,
             fotos:[
-                {url:"assets/picapau.png", legenda:'Presidente'},
-                {url:"assets/pedepano.png", legenda: 'Vice Presidente', small:true}] 
+                {url:"Assets/picapau.png", legenda:'Presidente'},
+                {url:"Assets/pedepano.png", legenda: 'Vice Presidente', small:true}] 
         }
     ]
     
