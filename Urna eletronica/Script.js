@@ -5,6 +5,7 @@
     let aviso = document.querySelector('.infbottom')
     let numeros = document.querySelector('.infleft-3')
     let lateral = document.querySelector('.infright')
+    var candidatearea = document.querySelector('.candidatesArea'); 
 
     let etapaatual = 0;
     let numero = ''
@@ -29,10 +30,10 @@
         cargo.innerHTML = etapa.titulo;
         descricao.innerHTML =' ';
         aviso.style.display = 'none'
-        lateral.innerHTML = '';
+        lateral.style.display = 'none';
         numeros.innerHTML = numeroHTML;
     
-    let candidatearea = document.querySelector('.candidatesArea'); 
+        //modal dos candidatos
     let candidateinf = document.querySelector('.candidate');
     candidatearea.innerHTML = '';
     for (let i = 0; i < etapa.candidatos.length; i++) {
@@ -82,6 +83,7 @@
                 }
                 
             }
+            lateral.style.display ='block';
             lateral.innerHTML = fotosHTML;
         }else 
         {
@@ -111,7 +113,7 @@
         aviso.style.display = 'block'
         numeros.innerHTML = ' '
         descricao.innerHTML = '<div class="avisoGrande pisca">VOTO EM BRANCO</div>';
-        lateral.innerHTML = '';
+        lateral.style.display = 'none';
         
     }
     function corrige(){
@@ -134,7 +136,10 @@
         if (lista[etapaatual] !== undefined)
         { começaretapa()}
         else {
+
             document.querySelector('.tela').innerHTML = '<div class="giantaviso pisca">FIM</div>'
+            candidatearea.innerHTML = '<h1 class="thanks"> Obrigado Pela sua Participação</h1>'
+
         }
 
         

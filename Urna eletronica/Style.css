@@ -164,12 +164,10 @@ header h1 {
     { margin-right: 10px;}
 .small 
     { margin-right: 25px;   
-      height: 120px;
+      height: 100px;
       margin-top: 5px;
       width: auto;
  }
-
-
 
 .avisoGrande{
         margin-top: 10px;
@@ -194,7 +192,7 @@ header fieldset
     border: red 4px solid; 
     text-align: center; 
     margin-bottom: 25px;}
-    header fieldset legend {
+    header fieldset .election-title {
         font-size: 40px;
         font-weight: 900;
         background: linear-gradient(to left ,rgb(209, 0, 0),white, darkblue );
@@ -210,6 +208,11 @@ header fieldset
   display: flex;
   justify-content: space-around;
   align-items: center;}
+.candidatesArea .thanks
+{ padding: 50px; 
+  background: none;
+  -webkit-text-fill-color: white;
+}
 .candidate 
 { display: flex;
   flex-direction: column;

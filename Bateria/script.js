@@ -1,7 +1,14 @@
-    
+    // Utilizando Teclado
     document.body.addEventListener('keyup', (event)=>{
         playSound(event.code.toLowerCase())
     })
+    //No Celular
+    document.querySelectorAll('.key').forEach(element => 
+        {element.addEventListener('click', ()=> 
+        { playSound(element.getAttribute('data-key'))
+        }
+        )});
+
 
     function playSound(sound)
     {
